@@ -1,0 +1,21 @@
+.footer{
+    width: 100%;
+    background-color:  rgb(83, 81, 81);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    /* opacity: 50%; */
+}
+.footer .btn{
+    background-color: transparent;
+}
+.footer .btn:hover{
+    background-color: transparent;
+}
+@media (max-width: 799px) {
+    .footer .btn {
+        /* gap: -00px; */
+        padding: 10px;
+    }
+}

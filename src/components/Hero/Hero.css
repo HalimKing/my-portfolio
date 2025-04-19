@@ -1,0 +1,268 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../../assets/images/dark-wood.png);
+    /* background-color: white; */
+    background-size: cover;
+    /* background-blend-mode: normal; */
+}
+.hero-text{
+    width: 60%;
+}
+.hero-text h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+    font-family: sans-serif;
+}
+.hero-text h1 span{
+    font-family: "Tangerine", cursive;
+    /* font-weight: 500; */
+    background-clip: text;
+    --webkit-background-clip: text;
+    --webkit-text-fill-color: transparent;
+}
+.hero-text p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.hero-img{
+    width: 40%;
+}
+.hero-img img{
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+    box-shadow:  12px 0px #FF2525;
+    
+}
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero-connect{
+    padding: 10px 20px;
+    background: linear-gradient(230deg, #FFE53B 5%, #FF2525 100%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    transition: 0.6s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+}
+.hero-connect:hover{
+    transform: scale(1.05);
+}
+.hero-resume{
+    padding: 10px 20px;
+    background: transparent;
+    color: #fff;
+    background: linear-gradient(200deg, #FFE53B 1.4%, #FF2525 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 1px solid linear-gradient(230deg, #FFE53B 5%, #FF2525 100%);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px 20px;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    transition: 0.6s;
+}
+.hero-resume:hover{
+    box-shadow: 0px 0px 10px 0px #d1d1d1;
+}
+
+
+.image-container::after{
+    content: "";
+    background-color: #FFE53B;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0px 0px 24px 0px  #FFE53B;
+    right: 250px;
+    top: 150px;
+    z-index: -99;
+}
+.hero-text p{
+    font-size: 1.2rem;
+    width: 60%;
+    font-family: serif;
+}
+
+
+
+/* ipad Pro screen responsive */
+@media (max-width: 1024px) {
+    .image-container::after{
+        width: 250px;
+        height: 250px;
+        right: 170px;
+        top: 150px;
+        z-index: -99;
+    }
+    .hero-text h1 {
+        font-size: 3.4rem;
+        
+    }
+    .hero-text h1 span {
+        font-size: 3.7rem;
+    }
+    .hero-text p {
+        font-size: 1.4rem;
+        width: 90%;
+        font-family: serif;
+    }
+}
+/* END ipad screen responsive */
+
+
+
+@media (max-width: 912px) {
+    .image-container::after{
+        width: 230px;
+        height: 230px;
+        right: 150px;
+        top: 150px;
+        z-index: -99;
+    }
+}
+
+
+
+@media (max-width: 820px) {
+    .hero-text h1 {
+        font-size: 2.8rem;
+        
+    }
+    .hero-text h1 span {
+       font-size: 3.3rem;
+    }
+    .hero-text p {
+        font-size: 1.2rem;
+        width: 85%;
+        font-family: serif;
+    }
+    .image-container::after{
+        
+        width: 220px;
+        height: 220px;
+        right: 120px;
+        top: 150px;
+        z-index: -99;
+    }
+    .hero-connect {
+        font-size: 1rem;
+        font-weight: 500;
+        
+    }
+    .hero-resume {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 799px){
+    .hero-text h1 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        line-height: 1;
+        font-family: sans-serif;
+    }
+    .hero-text{
+        width: 100%;
+    }
+    .hero-img {
+        width: 80%;
+    }
+    .image-container::after{
+        
+        width: 220px;
+        height: 220px;
+        right: 130px;
+        top: 150px;
+        z-index: -99;
+    }
+    .hero-text h1 span{
+        font-size: 2.6rem;
+    }
+    .hero-text p {
+        width: 90%;
+    }
+    .hero-connect {
+        font-size: 1rem;
+        font-weight: 500;
+        
+    }
+    .hero-resume {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 477px) {
+    .hero{
+        /* flex-direction: column;    */
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+    .hero-action {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-connect,.hero-resume {
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+    .image-container::after{
+        
+        width: 170px;
+        height: 170px;
+        right: 140px;
+        top: 130px;
+        z-index: -99;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        line-height: 1;
+        font-family: sans-serif;
+    }
+    .hero-text h1 span {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

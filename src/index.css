@@ -1,0 +1,129 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  padding: 70px 130px;
+}
+body{
+ font-family: "Roboto Flex", sans-serif;;
+}
+
+p{
+  font-size: 20px;
+  font-family: serif;
+  line-height: 1.1;
+}
+h3{
+  
+  font-size: 2rem;
+}
+h2{
+  font-size: 2rem;
+}
+.h1{
+  font-size: 4rem;
+  font-family: sans-serif;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.h1::after{
+  content: "";
+  width: 50%;
+  height: 5px;
+  background: linear-gradient(140deg, #FFE53B 1.4%, #FF2525 100%);
+  position: absolute;
+  bottom: 85px;
+  left: 0;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 70px;
+  }
+  h4{
+    font-size: 1.7rem;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 820px) {
+  .container {
+      padding: 70px 50px;
+  }
+}
+
+
+
+
+
+@media (max-width: 799px) {
+  .container {
+    width: 100%;
+    padding: 70px 50px;
+  }
+  .h1 {
+    font-size: 3rem;
+    font-family: sans-serif;
+    margin-bottom: 1.7rem;
+    position: relative;
+  }
+ 
+}
+
+
+
+
+
+@media (max-width: 477px) {
+  .container {
+    width: 100%;
+    padding: 50px 30px;
+  }
+  .h1{
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .h1::after{
+    content: "";
+    width: 50%;
+    height: 5px;
+    background: linear-gradient(140deg, #FFE53B 1.4%, #FF2525 100%);
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
